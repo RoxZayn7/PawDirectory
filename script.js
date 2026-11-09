@@ -291,7 +291,7 @@ document.addEventListener("keydown", function(e) { if (e.key === "Escape") close
         pop.innerHTML = '<svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M12 13.2c2.9 0 5.8 2.3 5.8 4.9 0 1.6-1.2 2.7-2.9 2.7-1 0-1.8-.4-2.9-.4s-1.9.4-2.9.4c-1.7 0-2.9-1.1-2.9-2.7 0-2.6 2.9-4.9 5.8-4.9ZM6.2 8.6c1.1.3 1.7 1.7 1.3 3.1-.4 1.4-1.6 2.3-2.7 2-1.1-.3-1.7-1.7-1.3-3.1.4-1.4 1.6-2.3 2.7-2Zm11.6 0c1.1-.3 2.3.6 2.7 2 .4 1.4-.2 2.8-1.3 3.1-1.1.3-2.3-.6-2.7-2-.4-1.4.2-2.8 1.3-3.1ZM9.3 3.6c1.2.1 2 1.4 1.9 2.9-.1 1.5-1.1 2.6-2.3 2.5-1.2-.1-2-1.4-1.9-2.9.1-1.5 1.1-2.6 2.3-2.5Zm5.4 0c1.2-.1 2.2 1 2.3 2.5.1 1.5-.7 2.8-1.9 2.9-1.2.1-2.2-1-2.3-2.5-.1-1.5.7-2.8 1.9-2.9Z"/></svg>';
         pop.style.left = (e.clientX - 15) + 'px';
         pop.style.top = (e.clientY - 15) + 'px';
-      pop.style.color = colors[Math.floor(Math.random() * colors.length)];
+        pop.style.color = colors[Math.floor(Math.random() * colors.length)];
         document.body.appendChild(pop);
         setTimeout(function(){ pop.remove(); }, 950);
     });
