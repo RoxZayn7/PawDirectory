@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawDirectory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="pawField" aria-hidden="true"></div>
+    <main class="wrap">
+
+        <!-- HERO -->
+        <section class="hero">
+            <p class="badge">🐾 Pet services near you</p>
+            <h1> Find the perfect care for <span class="hl"> your best friend</span></h1>
+            <p class="sub">Boarding, grooming, sitting, training, and more -- search and filter to find the right match.</p>
+
+            <div class="paw-trail" aria-hidden="true">
+                <span><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 13.2c2.9 0 5.8 2.3 5.8 4.9 0 1.6-1.2 2.7-2.9 2.7-1 0-1.8-.4-2.9-.4s-1.9.4-2.9.4c-1.7 0-2.9-1.1-2.9-2.7 0-2.6 2.9-4.9 5.8-4.9ZM6.2 8.6c1.1.3 1.7 1.7 1.3 3.1-.4 1.4-1.6 2.3-2.7 2-1.1-.3-1.7-1.7-1.3-3.1.4-1.4 1.6-2.3 2.7-2Zm11.6 0c1.1-.3 2.3.6 2.7 2 .4 1.4-.2 2.8-1.3 3.1-1.1.3-2.3-.6-2.7-2-.4-1.4.2-2.8 1.3-3.1ZM9.3 3.6c1.2.1 2 1.4 1.9 2.9-.1 1.5-1.1 2.6-2.3 2.5-1.2-.1-2-1.4-1.9-2.9.1-1.5 1.1-2.6 2.3-2.5Zm5.4 0c1.2-.1 2.2 1 2.3 2.5.1 1.5-.7 2.8-1.9 2.9-1.2.1-2.2-1-2.3-2.5-.1-1.5.7-2.8 1.9-2.9Z"/></svg></span>
+                <span><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 13.2c2.9 0 5.8 2.3 5.8 4.9 0 1.6-1.2 2.7-2.9 2.7-1 0-1.8-.4-2.9-.4s-1.9.4-2.9.4c-1.7 0-2.9-1.1-2.9-2.7 0-2.6 2.9-4.9 5.8-4.9ZM6.2 8.6c1.1.3 1.7 1.7 1.3 3.1-.4 1.4-1.6 2.3-2.7 2-1.1-.3-1.7-1.7-1.3-3.1.4-1.4 1.6-2.3 2.7-2Zm11.6 0c1.1-.3 2.3.6 2.7 2 .4 1.4-.2 2.8-1.3 3.1-1.1.3-2.3-.6-2.7-2-.4-1.4.2-2.8 1.3-3.1ZM9.3 3.6c1.2.1 2 1.4 1.9 2.9-.1 1.5-1.1 2.6-2.3 2.5-1.2-.1-2-1.4-1.9-2.9.1-1.5 1.1-2.6 2.3-2.5Zm5.4 0c1.2-.1 2.2 1 2.3 2.5.1 1.5-.7 2.8-1.9 2.9-1.2.1-2.2-1-2.3-2.5-.1-1.5.7-2.8 1.9-2.9Z"/></svg></span>
+                <span><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 13.2c2.9 0 5.8 2.3 5.8 4.9 0 1.6-1.2 2.7-2.9 2.7-1 0-1.8-.4-2.9-.4s-1.9.4-2.9.4c-1.7 0-2.9-1.1-2.9-2.7 0-2.6 2.9-4.9 5.8-4.9ZM6.2 8.6c1.1.3 1.7 1.7 1.3 3.1-.4 1.4-1.6 2.3-2.7 2-1.1-.3-1.7-1.7-1.3-3.1.4-1.4 1.6-2.3 2.7-2Zm11.6 0c1.1-.3 2.3.6 2.7 2 .4 1.4-.2 2.8-1.3 3.1-1.1.3-2.3-.6-2.7-2-.4-1.4.2-2.8 1.3-3.1ZM9.3 3.6c1.2.1 2 1.4 1.9 2.9-.1 1.5-1.1 2.6-2.3 2.5-1.2-.1-2-1.4-1.9-2.9.1-1.5 1.1-2.6 2.3-2.5Zm5.4 0c1.2-.1 2.2 1 2.3 2.5.1 1.5-.7 2.8-1.9 2.9-1.2.1-2.2-1-2.3-2.5-.1-1.5.7-2.8 1.9-2.9Z"/></svg></span>
+                <span><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 13.2c2.9 0 5.8 2.3 5.8 4.9 0 1.6-1.2 2.7-2.9 2.7-1 0-1.8-.4-2.9-.4s-1.9.4-2.9.4c-1.7 0-2.9-1.1-2.9-2.7 0-2.6 2.9-4.9 5.8-4.9ZM6.2 8.6c1.1.3 1.7 1.7 1.3 3.1-.4 1.4-1.6 2.3-2.7 2-1.1-.3-1.7-1.7-1.3-3.1.4-1.4 1.6-2.3 2.7-2Zm11.6 0c1.1-.3 2.3.6 2.7 2 .4 1.4-.2 2.8-1.3 3.1-1.1.3-2.3-.6-2.7-2-.4-1.4.2-2.8 1.3-3.1ZM9.3 3.6c1.2.1 2 1.4 1.9 2.9-.1 1.5-1.1 2.6-2.3 2.5-1.2-.1-2-1.4-1.9-2.9.1-1.5 1.1-2.6 2.3-2.5Zm5.4 0c1.2-.1 2.2 1 2.3 2.5.1 1.5-.7 2.8-1.9 2.9-1.2.1-2.2-1-2.3-2.5-.1-1.5.7-2.8 1.9-2.9Z"/></svg></span>
+                <span><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 13.2c2.9 0 5.8 2.3 5.8 4.9 0 1.6-1.2 2.7-2.9 2.7-1 0-1.8-.4-2.9-.4s-1.9.4-2.9.4c-1.7 0-2.9-1.1-2.9-2.7 0-2.6 2.9-4.9 5.8-4.9ZM6.2 8.6c1.1.3 1.7 1.7 1.3 3.1-.4 1.4-1.6 2.3-2.7 2-1.1-.3-1.7-1.7-1.3-3.1.4-1.4 1.6-2.3 2.7-2Zm11.6 0c1.1-.3 2.3.6 2.7 2 .4 1.4-.2 2.8-1.3 3.1-1.1.3-2.3-.6-2.7-2-.4-1.4.2-2.8 1.3-3.1ZM9.3 3.6c1.2.1 2 1.4 1.9 2.9-.1 1.5-1.1 2.6-2.3 2.5-1.2-.1-2-1.4-1.9-2.9.1-1.5 1.1-2.6 2.3-2.5Zm5.4 0c1.2-.1 2.2 1 2.3 2.5.1 1.5-.7 2.8-1.9 2.9-1.2.1-2.2-1-2.3-2.5-.1-1.5.7-2.8 1.9-2.9Z"/></svg></span>
+                <span><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 13.2c2.9 0 5.8 2.3 5.8 4.9 0 1.6-1.2 2.7-2.9 2.7-1 0-1.8-.4-2.9-.4s-1.9.4-2.9.4c-1.7 0-2.9-1.1-2.9-2.7 0-2.6 2.9-4.9 5.8-4.9ZM6.2 8.6c1.1.3 1.7 1.7 1.3 3.1-.4 1.4-1.6 2.3-2.7 2-1.1-.3-1.7-1.7-1.3-3.1.4-1.4 1.6-2.3 2.7-2Zm11.6 0c1.1-.3 2.3.6 2.7 2 .4 1.4-.2 2.8-1.3 3.1-1.1.3-2.3-.6-2.7-2-.4-1.4.2-2.8 1.3-3.1ZM9.3 3.6c1.2.1 2 1.4 1.9 2.9-.1 1.5-1.1 2.6-2.3 2.5-1.2-.1-2-1.4-1.9-2.9.1-1.5 1.1-2.6 2.3-2.5Zm5.4 0c1.2-.1 2.2 1 2.3 2.5.1 1.5-.7 2.8-1.9 2.9-1.2.1-2.2-1-2.3-2.5-.1-1.5.7-2.8 1.9-2.9Z"/></svg></span>
+            </div>
+
+            <div class="stats">
+                <div> <b id="statCount">6</b><span>services listed</span></div>
+                <div> <b> 6</b> <span>service categories </span> </div>
+            </div>
+        </section>
+
+        <!-- SEARCH -->
+        <section class="search-panel">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search services, e.g. grooming...">
+                <button class="clear-btn" id="clearSearch" type="button" aria-label="Clear search">x</button>
+            </div>
+            <p class="search-status" id="searchStatus"> Showing all services</p>
+        </section>
+
+        <!-- Pet Filter -->
+        <div class="filters">
+            <span class="f-label"> Pet: </span>
+            <div class="f-group" id="petFilters">
+                <button class="f-btn active" data-pet="all" type="button">All pets</button>
+                <button class="f-btn" data-pet="dog" type="button">🐶 Dogs </button>
+                <button class="f-btn" data-pet="cat" type="button">🐱 Cats</button> 
+            </div>
+            <button class="reset-btn" id="resetAll" type="button"> Reset all</button>
+        </div>
+
+        <!-- RESULTS -->
+        <div class="results-head">
+            <h2> Services</h2>
+            <p id="resultCount"></p>
+        </div>
+
+        <div class="grid" id="grid"></div>
+
+        <div class="empty" id="emptyState">
+            <span class="big-paws">🐾</span>
+            <h3> No matches found</h3>
+            <p> Try a different word or clear the filters.</p>
+            <button id="emptyReset" type="button"> Show all services</button>
+        </div>
+    </main>
+
+    <footer>
+        <p> <b> PawDirectory</b> 🐾 Pet services around Hendersonville, NC </p>
+        <p> Made with 💜 for happy pets</p>
+    </footer>
+
+    <!-- DETAILS POPUP -->
+    <div class="modal-back" id="modalBack">
+        <div class="modal">
+            <button class="m-close" id="mClose" type="button" aria-label="Close">x</button>
+            <div class="m-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
